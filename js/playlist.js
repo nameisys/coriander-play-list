@@ -1,8 +1,6 @@
 
 var playlistId;
 
-playlistId = 'PLxkbCJED9Q4TyjA_CVF9mCYCYae4Lta4P';
-
 function requestUserUploadsPlaylistId() {
   // // See https://developers.google.com/youtube/v3/docs/channels/list
   // var request = gapi.client.youtube.channels.list({
@@ -14,10 +12,12 @@ function requestUserUploadsPlaylistId() {
   //   playlistId = 'AIzaSyDmYXERKlS-Yh1k2Tu1NDPeK-6ZDXplkEo';
   //   requestVideoPlaylist(playlistId);
   // });
-  requestVideoPlaylist(playlistId);
+  // requestVideoPlaylist(playlistId);
 }
 
-function requestVideoPlaylist(playlistId) {
+function requestVideoPlaylist() {
+  playlistId = 'PLxkbCJED9Q4TyjA_CVF9mCYCYae4Lta4P';
+
   $('.youtube-result').html('');
   var requestOptions = {
     playlistId: playlistId,
