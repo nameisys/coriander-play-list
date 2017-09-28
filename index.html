@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CORIANDER</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/playlist.js"></script>
+    <script>
+      function googleApiClientReady(){
+        gapi.client.setApiKey('AIzaSyDmYXERKlS-Yh1k2Tu1NDPeK-6ZDXplkEo');
+        gapi.client.load('youtube', 'v3', function() {
+          requestUserUploadsPlaylistId();
+        });
+      }
+    </script>
+    <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <a href=""><img src="assets/images/cori-logo.png"></a>
+        </header>
+        <!--<nav></nav>-->
+        <article class="youtube-result clear">
+        </article>
+        <article class="instagram-result"></article>
+        <article class="apple-result"></article>
+        <footer>
+            copyright © 2017 yeonsoo | <a href="mailto:nameisys@gmail.com">nameisys@gmail.com</a>
+        </footer>
+    </main>
+</body>
+</html>
